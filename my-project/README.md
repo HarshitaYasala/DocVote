@@ -12,13 +12,10 @@ DocVote is a web application that allows user to upload PDF Documents, explore t
 
 **Getting Started**  
 To run the DocVote application locally, follow these steps:
-* Clone the repository to your local machine. You can do this by running the following command in your teeminal "git clone repository-url".
-  
-* Once the responsitory is cloned, Navigate to the project directory and Install the necessary dependencies using "npm install". For this application i have installed an extra dependency for icons using "npm install react-icons".
-  
-* After the dependencies are installed start the development server using the following command "npm start".
-  
-* With the development server running, Open your web browser and visit "http://localhost:3000" to access the DocVote application. From there, you can browse pdf files and vote on your favorites.
+* **Clone the repository:** Start by cloning this repository to your local machine. You can do this by running the following command in your terminal "git clone repository-url".    
+* **Install Dependencies:** Once the responsitory is cloned, Navigate to the project directory and Install the necessary dependencies using "npm install". For this application i have installed an extra dependency for icons using "npm install react-icons".   
+* **Start the development server:** After the dependencies are installed start the development server using the following command "npm start".  
+* **Explore and Interact:** With the development server running, Open your web browser and visit "http://localhost:3000" to access the DocVote application. From there, you can browse pdf files and vote on your favorites.
   
 **Video**  
 Here is the video of DocVote web application for reference
