@@ -31,9 +31,15 @@ class App extends Component {
   handleFileChange = (event) => {
     {
       const files = event.target.files;
-      const newPdfFiles = [...files].filter(file => file.type === 'application/pdf');
+      const newPdfFiles = [];
+      const pdfFiles = [...files].filter(file => file.type === 'application/pdf');
+      if(pdfFiles.length !== files.length){
+        alert("Please select only PDF Files.");
+      }
+      pdfFiles.forEach(file =>{
+        newPdfFiles.push(file);
+      })
       const newVoteStatus = newPdfFiles.map(() => null);
-  
       this.setState((prevState) => ({
         pdfFiles: [...prevState.pdfFiles, ...newPdfFiles],
         voteStatus: [...prevState.voteStatus, ...newVoteStatus]
