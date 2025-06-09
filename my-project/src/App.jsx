@@ -107,7 +107,8 @@ render() {
   return (
     <div className="pdf-uploader">
       <div>
-      <h1 className='pdf-title'>Upload PDF <FaFilePdf className='image'/></h1>
+      <h1 className = 'pdf-title'>Welcome to DocVote – Your Voice Matters</h1>
+      <h1 className='pdf-title'>Upload the PDF <FaFilePdf className='image'/></h1>
       <div className="pdf-uploader-button">
         <button className= 'upload' onClick={this.handleUploadClick}><p>Upload<FaCloudUploadAlt className='cloud'/></p></button>
         <input
