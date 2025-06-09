@@ -4,6 +4,9 @@ body{
   border: 1px solid gray;
 
 }
+.Pdf{
+  justify-content: center;
+}
 .pdf-uploader {
   width: 100%;
   height: 100vh;
