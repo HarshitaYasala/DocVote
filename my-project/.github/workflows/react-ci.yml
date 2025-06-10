@@ -7,19 +7,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout source code
-        uses: actions/checkout@v3
+    - name: Checkout source code
+      uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: "16"
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
 
-      - name: Install dependencies
-        run: npm install
+    - name: Install dependencies
+      run: npm install
 
-      - name: Run tests
-        run: npm test -- --watchAll=false
+    - name: Run tests
+      run: npm test -- --watchAll=false
 
-      - name: Build React app
-        run: npm run build
+    - name: Build React app
+      run: npm run build
