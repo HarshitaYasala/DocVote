@@ -3,8 +3,8 @@ name: React CI
 on:
   push:
     branches:
-      - add-ci-workflow
       - main
+      - add-ci-workflow
 
 jobs:
   build:
@@ -21,9 +21,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: my-project
 
       - name: Run tests
         run: npm test -- --watchAll=false
+        working-directory: my-project
 
       - name: Build React app
         run: npm run build
+        working-directory: my-project
